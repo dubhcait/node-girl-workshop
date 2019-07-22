@@ -1,0 +1,23 @@
+{
+  "name": "setup",
+  "version": "1.0.0",
+  "description": "trials",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/node-girls/node-workshop.git"
+  },
+  "author": "KB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/node-girls/node-workshop/issues"
+  },
+  "homepage": "https://github.com/node-girls/node-workshop#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
