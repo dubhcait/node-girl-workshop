@@ -8,7 +8,7 @@ function handler(request, response) {
   const content = endpoint.split(".")[1];
 
   // this is to set the mime type to send back headers 
-  const CT = {
+  const contentType = {
     css: "text/css",
     ico: "image/vnd.microsoft.icon",
     js: "text/javascript",
@@ -85,7 +85,7 @@ function handler(request, response) {
         console.log(error, "wft");
         return;
       }
-      response.writeHead(200, { "Content-Type": CT[content] });
+      response.writeHead(200, { "Content-Type": contentType[content] });
       response.end(file);
     });
   }
